@@ -1,0 +1,20 @@
+{
+  "name": "classfix",
+  "version": "1.0.0",
+  "description": "Transform a string object into a clean string to make the className more orderly.",
+  "main": "dist/main.js",
+  "types": "dist/main.d.ts",
+  "scripts": {
+    "tsc": "tsc",
+    "build": "tsc --build"
+  },
+  "keywords": [
+    "classfix",
+    "classname"
+  ],
+  "author": "CarmeloCampos",
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^5.3.3"
+  }
+}
