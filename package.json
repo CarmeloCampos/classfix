@@ -1,13 +1,16 @@
 {
   "name": "classfix",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Transform a string object into a clean string to make the className more orderly.",
   "main": "dist/main.js",
+  "module": "dist/main.mjs",
   "types": "dist/main.d.ts",
   "scripts": {
-    "tsc": "tsc",
-    "build": "tsc --build"
+    "build": "tsup"
   },
+  "files": [
+    "dist"
+  ],
   "keywords": [
     "classfix",
     "classname"
@@ -15,6 +18,8 @@
   "author": "CarmeloCampos",
   "license": "MIT",
   "devDependencies": {
+    "tsup": "^8.0.1",
     "typescript": "^5.3.3"
-  }
+  },
+  "repository": "https://github.com/CarmeloCampos/classfix"
 }
