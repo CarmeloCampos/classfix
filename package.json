@@ -1,16 +1,26 @@
 {
   "name": "classfix",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Transform a string object into a clean string to make the className more orderly.",
   "main": "dist/main.js",
   "module": "dist/main.mjs",
   "types": "dist/main.d.ts",
   "scripts": {
-    "build": "tsup"
+    "build": "tsup",
+    "format": "prettier ./ --write",
+    "lint": "eslint ./ --max-warnings=0"
   },
   "files": [
     "dist"
   ],
+  "exports": {
+    ".": {
+      "types": "./dist/main.d.ts",
+      "require": "./dist/main.js",
+      "import": "./dist/main.mjs"
+    },
+    "./package.json": "./package.json"
+  },
   "keywords": [
     "classfix",
     "class",
@@ -24,6 +34,11 @@
   "author": "CarmeloCampos",
   "license": "MIT",
   "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^6.19.0",
+    "@typescript-eslint/parser": "^6.19.0",
+    "eslint": "^8.56.0",
+    "eslint-config-prettier": "^9.1.0",
+    "prettier": "^3.2.2",
     "tsup": "^8.0.1",
     "typescript": "^5.3.3"
   },
